@@ -55,8 +55,8 @@ class MoneyController extends Controller
     }
      public function generateAccessToken()
     {
-        $consumer_key="V72Uf93McGiw4TwOlIeEavJQ3PTUef4e";
-        $consumer_secret="91hIt8Xi3IAEbcJQ";
+        $consumer_key=" ";//enter safaricom customer  keys
+        $consumer_secret=" ";//enter safaricom secret keys
         $credentials = base64_encode($consumer_key.":".$consumer_secret);
         $url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
         $curl = curl_init();
